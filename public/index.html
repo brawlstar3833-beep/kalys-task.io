@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalys Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top-bar">
+      <div class="brand">
+        <span class="site-title">Kalys Tasks</span>
+      </div>
+    </div>
+  
+    <div class="login">
+      <input id="username" type="text" placeholder="Логин" autocomplete="username">
+      <input id="password" type="password" placeholder="Пароль" autocomplete="current-password">
+      <button id="loginBtn">Маселелерди чыгаруу</button>
+      <button class="btn btn-outline" onclick="showAll()">Маселелер</button>
+      <button class="btn btn-primary" onclick="showSolved()">Аткарылган маселелер</button>
+    </div>
+  
+    <div class="blocks">
+      <div class="block" id="block-all">
+        <h2>Маселелер</h2>
+        <div id="all"></div>
+      </div>
+  
+      <div class="block" id="block-solved">
+        <h2>Аткарылган маселелер</h2>
+        <div id="solved"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
